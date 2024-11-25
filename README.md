@@ -20,6 +20,10 @@ De acuerdo al diagrama de clases (UML), generado en APE - parqueadero, implement
 - Se eliminó el atributo idEmpleado en la clase Empleado.
 - Se agregó el atributo especialidad en la clase Empleado.
 - Se corrigió la multiplicidad de la asociación de las clases Cliente-Vehículo.
+
+# Análisis Textual Final
+El sistema de parqueadero en Java está diseñado para gestionar clientes, vehículos, empleados, reservas y plazas de aparcamiento utilizando un enfoque orientado a objetos basado en diagramas UML nativos. Los clientes que dispongan de abono y vehículo podrán reservar determinadas plazas de aparcamiento en el parking. Empleados como cajeros y supervisores procesan pagos y supervisan las operaciones, mientras que la estructura del piso facilita la organización y usabilidad del espacio.
+
 # Clases Programadas
 * [Main](https://github.com/Michu117/Parqueadero/blob/main/Parqueadero/src/Main.java)
 * [Automovil](https://github.com/Michu117/Parqueadero/blob/main/Parqueadero/src/Automovil.java)
