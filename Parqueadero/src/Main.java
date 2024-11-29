@@ -3,10 +3,13 @@ import java.util.Date;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Bienvenido al sistema de parqueadero!");
-
+        // Creación de un vehículo
+        Vehiculo vehiculo = new Automovil("ABC123", "Toyota", "Rojo");
         // Creación de un cliente con suscripción activa
         ClienteRegular cliente = new ClienteRegular("Fabricio", "Ruiz", "1234567890", true, "Tarjeta de Crédito");
-        Factura factura = new Factura("001", 117.0f, cliente.getNombre() + " " + cliente.getApellido(), new Date(), TipoFactura.FISICA);
+        // Usar los setters para modificar los valores
+
+        Factura Factura = new Factura("001", 117.0f, cliente.getNombre() + " " + cliente.getApellido(), new Date(), TipoFactura.FISICA);
 
         // Declaración de cajero como un Cajero directamente
         Cajero cajero = new Cajero("Alicia", "Alvarado", "0987654321", "Cajero");
@@ -17,12 +20,12 @@ public class Main {
         reserva.confirmarReserva();
 
         // Mostrar factura
-        factura.generarFactura();
-        factura.imprimirFactura();
+        Factura.generarFactura();
+        Factura.imprimirFactura();
 
         // Procesar Pago
         cajero.trabajar();
-        cajero.procesarPago(factura, cliente);
+        cajero.procesarPago(Factura, cliente);
 
         // Verificar suscripción
         cajero.verificarSuscripcion(cliente);

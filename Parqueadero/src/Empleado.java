@@ -1,4 +1,4 @@
-public class Empleado extends Persona implements IContrato {
+public abstract class Empleado extends Persona implements IContrato {
     private String especialidad;
 
     // Constructor
